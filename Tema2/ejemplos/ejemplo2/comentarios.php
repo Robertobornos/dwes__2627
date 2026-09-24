@@ -1,3 +1,11 @@
+<!--
+    Autor: Roberto
+    Fecha: 2024-06-10s
+    Descripción: Ejemplo de comentarios en HTML
+-->
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,7 +19,11 @@
 
     
     <?php
-        
+        //Este es un comentario de una sola línea
+
+        /*este comentario es de varias líneas
+        y puede ocupar varias líneas*/
+
     echo "<p>Hola Mundo prueba</p>";
     
     ?>
