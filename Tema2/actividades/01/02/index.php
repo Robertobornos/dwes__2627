@@ -22,5 +22,8 @@ echo "<a href='http://www.elpais.es' target='_blank'>Visitar El País</a>";
 
 echo "<img src='elpais.jpg' alt='Imagen de El País'>";
 
+
 echo "</body></html>";
+
+
 ?>
