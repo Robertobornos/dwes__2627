@@ -39,15 +39,15 @@
                     <input type="number" class="form-control" step="0.01" placeholder="0.00" id="valor2" name="valor2" required>   
                 </div>
 
-                <!-- botones de  acción -->
+                            <!-- botones de acción -->
                 <div class="btn-group" role="group">
                     <button type="reset" class="btn btn-danger">Borrar</button>
                     <button type="submit" class="btn btn-warning" name="operacion" value="sumar" formaction="sumar.php">Sumar</button>
                     <button type="submit" class="btn btn-warning" name="operacion" value="restar" formaction="restar.php">Restar</button>
                     <button type="submit" class="btn btn-warning" name="operacion" value="multiplicar" formaction="multiplicar.php">Multiplicar</button>
-                    <button type="submit" class="btn btn-warning" name="operacion" value="dividir" formaction="dividir.php">Dividir</button> 
+                    <button type="submit" class="btn btn-warning" name="operacion" value="dividir" formaction="dividir.php">Dividir</button>
+                    <button type="submit" class="btn btn-warning" name="operacion" value="potencia" formaction="potencia.php">Potencia</button>
                 </div>
-
             </form>
 
             </div>
