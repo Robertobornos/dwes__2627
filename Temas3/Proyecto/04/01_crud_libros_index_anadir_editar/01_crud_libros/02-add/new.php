@@ -29,6 +29,6 @@
 
 
 // Views
-include 'views/new.view.php';
+include 'views/new.view.php';a
 
 
