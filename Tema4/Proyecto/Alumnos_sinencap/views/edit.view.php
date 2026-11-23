@@ -61,26 +61,23 @@
                     </div>
 
                     <!-- Curso -->
-                    <!-- Genera dinámicamente el select de cursos a partir del array $cursos -->
+                    <!-- Genera dinámicamente el combobox de cursos a partir del array $cursos -->
                     <div class="mb-3">
                         <label for="curso" class="form-label">Curso:</label>
-
-                        <select name="curso" id="curso" class="form-select" required>
-
-                            <option value="">Seleccione curso ...</option>
-
+                        <button class="form-control combobox-toggle" type="button"
+                            data-bs-toggle="combobox"
+                            data-bs-name="curso"
+                            data-bs-placeholder="Seleccione curso …">
+                            <span class="combobox-value">Seleccione curso ...</span>
+                            <svg class="combobox-caret" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.46967 5.46967C0.762563 5.17678 1.23744 5.17678 1.53033 5.46967L5 8.93934L8.46967 5.46967C8.76256 5.17678 9.23744 5.17678 9.53033 5.46967C9.82322 5.76256 9.82322 6.23744 9.53033 6.53033L5.53033 10.5303C5.23744 10.8232 4.76256 10.8232 4.46967 10.5303L0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967Z" fill="currentcolor" />
+                            </svg>
+                        </button>
+                        <div class="menu">
                             <?php foreach ($cursos as $indice => $curso) : ?>
-
-                                <option value="<?= $indice ?>"
-                                    <?= ($alumno->curso == $indice) ? 'selected' : null ?>>
-
-                                    <?= $curso ?>
-
-                                </option>
-
+                                <button class="menu-item <?= ($alumno->curso == $indice) ? 'selected' : null ?>" type="button" data-bs-value="<?= $indice ?>"><?= $curso ?></button>
                             <?php endforeach; ?>
-
-                        </select>
+                        </div>
                     </div>
                     <!-- Curso -->
 
